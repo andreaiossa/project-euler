@@ -70,8 +70,7 @@ def flush(player):
 	if len(player.unique_suits) == 1 and player.points == 0 and  len(player.unique_values) == 5:
 		nex = 0
 		for card in player.hand:
-			if card.next in player.values:
-				
+			if card.next in player.values:	
 				nex += 1
 		if nex == 4:
 			player.points += 500
